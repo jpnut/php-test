@@ -1,0 +1,38 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.characters {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 1.5rem;
+  row-gap: 2rem;
+
+  @include media-breakpoint-up(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include media-breakpoint-up(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include media-breakpoint-up(xl) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.character {
+  margin: 0 auto;
+  max-width: 300px;
+  box-shadow: 0 0 10px 1px rgba(20,20,20,0), 0 0 20px 2px rgba(20,20,20,0);
+  box-sizing: content-box;
+  transition: box-shadow 150ms;
+
+  &:hover {
+    box-shadow: 0 0 10px 1px rgba(20,20,20,0.2), 0 0 20px 2px rgba(20,20,20,0.1);
+  }
+}

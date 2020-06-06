@@ -1,3 +1,9 @@
+# jpnut/rick-and-morty
+
+Forked from totallywicked/rick-and-morty (original readme appended below)
+
+Created with Laravel & React. You can build the assets with `yarn dev` or `yarn prod`.
+
 # totallywicked/rick-and-morty
 
 **This project will be based primarily on your ability to fulfill the task 
